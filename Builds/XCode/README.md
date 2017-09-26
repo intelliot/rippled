@@ -1,4 +1,4 @@
-# macos Build Instructions
+# macOS Build Instructions
 
 ## Important
 
@@ -8,28 +8,27 @@ testing.
 
 ## Prerequisites
 
-You'll need OSX 10.8 or later
+You'll need macOS 10.8 or later.
 
 To clone the source code repository, create branches for inspection or
-modification, build rippled using clang, and run the system tests you will need
+modification, build `rippled` using `clang`, and run the system tests you will need
 these software components:
 
-* [XCode](https://developer.apple.com/xcode/)
+* [Xcode](https://developer.apple.com/xcode/)
 * [Homebrew](http://brew.sh/)
 * [Git](http://git-scm.com/)
 * [Scons](http://www.scons.org/)
 
 ## Install Software
 
-### Install XCode
+### Install Xcode
 
-If not already installed on your system, download and install XCode using the
-appstore or by using [this link](https://developer.apple.com/xcode/).
+If not already installed on your system, download and install Xcode using the
+App Store or by using [this link](https://developer.apple.com/xcode/).
 
-For more info, see "Step 1: Download and Install the Command Line Tools"
-[here](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac)
+For more info, see [Step 1: Download and Install the Command Line Tools](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac).
 
-The command line tools can be installed through the terminal with the command:
+The command line tools can be installed through a terminal with the command:
 
 ```
 xcode-select --install
@@ -45,8 +44,7 @@ Open a terminal and type:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-For more info, see "Step 3: Install Homebrew"
-[here](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac)
+For more info, see [Step 3: Install Homebrew](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac).
 
 ### Install Git
 
@@ -54,17 +52,16 @@ For more info, see "Step 3: Install Homebrew"
 brew update brew install git
 ```
 
-For more info, see "Step 4: Install Git"
-[here](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac)
+For more info, see [Step 4: Install Git](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac).
 
 **NOTE**: To gain full featured access to the
 [git-subtree](http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/)
-functionality used in the rippled repository, we suggest Git version 1.8.3.2 or
+functionality used in the `rippled` repository, we suggest Git version 1.8.3.2 or
 later.
 
 ### Install Scons
 
-Requires version 2.3.0 or later
+Requires version 2.3.0 or later.
 
 ```
 brew install scons
@@ -83,7 +80,7 @@ brew install pkg-config
 
 ### Build Google Protocol Buffers Compiler
 
-Building rippled on osx requires `protoc` version 2.5.x or 2.6.x (later versions
+Building rippled on macOS requires `protoc` version 2.5.x or 2.6.x (later versions
 do not work with rippled at this time).
 
 Download [this](https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-2.6.1.tar.bz2)
@@ -119,7 +116,7 @@ Download [a release](https://sourceforge.net/projects/boost/files/boost/1.61.0/b
 Extract it to a folder, making note of where, open a terminal, then:
 
 ```
-./bootstrap.sh ./b2 toolset=clang threading=multi runtime-link=static link=static cxxflags="-stdlib=libc++" linkflags="-stdlib=libc++" address-model=64
+./bootstrap.sh && ./b2 toolset=clang threading=multi runtime-link=static link=static cxxflags="-stdlib=libc++" linkflags="-stdlib=libc++" address-model=64
 ```
 
 Create an environment variable `BOOST_ROOT` in one of your `rc` files, pointing
@@ -161,6 +158,19 @@ export BOOST_ROOT=/Users/Abigail/Downloads/boost_1_61_0
 ```
 
 ## Build
+
+There are two ways to build rippled: `scons` or `cmake`. These are different build systems. `scons` is Python-based. `cmake` has its own build language.
+
+### Using cmake
+
+First, install `cmake`. Then create a directory (here we create one called `cm_build`; you can name this directory anything) and run `cmake`.
+
+```
+brew install cmake
+mkdir cm_build && cd cm_build && cmake -DCMAKE_VERBOSE_MAKEFILE=1 .. && make verbose=1
+```
+
+### Using scons
 
 ```
 scons
