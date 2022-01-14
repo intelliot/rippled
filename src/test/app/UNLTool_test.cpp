@@ -233,8 +233,14 @@ private:
     };
 
     void
-    testPrintUNL()
+    testPrintUNL(std::string const& seed)
     {
+        auto derive_key = [&seed](std::string const& extra) {
+            if (!extra.empty())
+                return seed + ":" + extra;
+            return seed;
+        };
+
         /**
          * fill in the empty strings in the section below:
          * fill one and only one of publisherMasterSeed and publisherPrivateKey
@@ -242,16 +248,22 @@ private:
 
         // publisher,
         // one of publisherMasterSeed and publisherPrivateKey must be empty.
-        std::string const publisherMasterSeed = "not a good publisher seed";
+        std::string const publisherMasterSeed = derive_key("publisher-master");
         std::string const publisherPrivateKey;
-        std::string const publisherSignKeySeed = "not a good signing seed";
+        std::string const publisherSignKeySeed = derive_key("publisher-signer");
         int publisherManifestSeq = 5;
 
         // validator, one per line. {masterSeed, signingSeed, manifestSeq}
         // for example:
-        std::vector<NodeSeed> SignerSeeds = {
-            {"deadbeef1", "deadbeef1_sign", 7},
-            {"deadbeef2", "deadbeef2_sign", 5}};
+        std::vector<NodeSeed> SignerSeeds;
+
+        for (int i = 0; i != 5; ++i)
+        {
+            SignerSeeds.push_back(
+                {derive_key("validator-master-") + std::to_string(i),
+                 derive_key("validator-signer-") + std::to_string(i),
+                 i + 18});
+        }
 
         // misc
         int unlSeq = 5;                                   // need to update
@@ -352,7 +364,16 @@ public:
     void
     run() override
     {
-        testPrintUNL();
+        auto const seed = arg();
+
+        if (seed.empty())
+        {
+            std::cout << "Need to specify a seed!\n";
+            return;
+        }
+
+        std::cout << "Using seed '" << seed << "':\n";
+        testPrintUNL(seed);
     }
 };
 
