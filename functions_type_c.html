@@ -66,10 +66,10 @@ $(function() {
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>cache_type
 : <a class="el" href="classripple_1_1PeerFinder_1_1Livecache.html#acf01bef9529563e945193df8910e6688">ripple::PeerFinder::Livecache&lt; Allocator &gt;</a>
-, <a class="el" href="classripple_1_1TaggedCache.html#ad76a9fe8f3207bfa856bc1edadabb046">ripple::TaggedCache&lt; Key, T, Hash, KeyEqual, Mutex &gt;</a>
+, <a class="el" href="classripple_1_1TaggedCache.html#a3d8282ec993c6e4d4e1e34758c1d1a70">ripple::TaggedCache&lt; Key, T, IsKeyCache, Hash, KeyEqual, Mutex &gt;</a>
 </li>
 <li>CacheType
-: <a class="el" href="classripple_1_1detail_1_1BasicFullBelowCache.html#a053001dc20690a3c54616fe8f3fea843">ripple::detail::BasicFullBelowCache&lt; Key &gt;</a>
+: <a class="el" href="classripple_1_1detail_1_1BasicFullBelowCache.html#afa52468a09a96dd41eebfaf17d26b4a2">ripple::detail::BasicFullBelowCache</a>
 </li>
 <li>callback
 : <a class="el" href="classAutoSocket.html#a02703fb82f22f8ab62065d89ce427beb">AutoSocket</a>
@@ -77,9 +77,6 @@ $(function() {
 <li>callback_type
 : <a class="el" href="classripple_1_1detail_1_1WorkBase.html#ab8ab77c09ec2295552af5e947e23989b">ripple::detail::WorkBase&lt; Impl &gt;</a>
 , <a class="el" href="classripple_1_1detail_1_1WorkFile.html#a9c221c366a4de8519b2672fd03974e04">ripple::detail::WorkFile</a>
-</li>
-<li>CancelCallback
-: <a class="el" href="classripple_1_1Job.html#ab19c41a13335dadf210f50223268856d">ripple::Job</a>
 </li>
 <li>Char
 : <a class="el" href="classJson_1_1Reader.html#a068ce78fe0105dce714f8f5ff1928634">Json::Reader</a>
@@ -109,13 +106,13 @@ $(function() {
 , <a class="el" href="classripple_1_1BasePeer.html#a220921e7052fa983f8d6227cead80edf">ripple::BasePeer&lt; Handler, Impl &gt;</a>
 , <a class="el" href="classripple_1_1BaseWSPeer.html#ade8a1854eceb4458bc2e8db329b1e88f">ripple::BaseWSPeer&lt; Handler, Impl &gt;</a>
 , <a class="el" href="classripple_1_1Consensus.html#afe915e894470ce19e551b21b503826ed">ripple::Consensus&lt; Adaptor &gt;</a>
-, <a class="el" href="classripple_1_1detail_1_1BasicFullBelowCache.html#a75bf1d68ac90ebc1163e8e6bd0568752">ripple::detail::BasicFullBelowCache&lt; Key &gt;</a>
+, <a class="el" href="classripple_1_1detail_1_1BasicFullBelowCache.html#a423a681101740aa7435513958052b80a">ripple::detail::BasicFullBelowCache</a>
 , <a class="el" href="classripple_1_1Door.html#a42a7bf91b273ab3199cc13f9bb51641d">ripple::Door&lt; Handler &gt;</a>
 , <a class="el" href="classripple_1_1InboundLedger.html#a6dbf6ff57c3af943706fc5d4ccac2d77">ripple::InboundLedger</a>
 , <a class="el" href="classripple_1_1InboundLedgers.html#a0b264439abc0967cb47ebd106c0d62f6">ripple::InboundLedgers</a>
 , <a class="el" href="classripple_1_1InboundTransactions.html#a7e983f1242289095a89311b17b72be0b">ripple::InboundTransactions</a>
 , <a class="el" href="classripple_1_1Job.html#ac6767f9553105ee2dfcc6cc34c7b5daa">ripple::Job</a>
-, <a class="el" href="classripple_1_1KeyCache.html#a08e89647e3c3229104230c925433920d">ripple::KeyCache&lt; Key, Hash, KeyEqual, Mutex &gt;</a>
+, <a class="el" href="structripple_1_1metrics_1_1SingleMetrics.html#ad8612103e65d1cca73971350a8ef7141">ripple::metrics::SingleMetrics</a>
 , <a class="el" href="classripple_1_1NetworkOPs.html#a52b5e5b8e68aa4430d35deb844418ddb">ripple::NetworkOPs</a>
 , <a class="el" href="classripple_1_1NodeStore_1_1progress.html#a17a7cec21826f1d7e2367a612cbb0a45">ripple::NodeStore::progress</a>
 , <a class="el" href="classripple_1_1NodeStore_1_1Timing__test.html#a420d98267d155cb5e3a05658837bf96d">ripple::NodeStore::Timing_test</a>
@@ -126,7 +123,7 @@ $(function() {
 , <a class="el" href="classripple_1_1Resource_1_1ResourceManager__test_1_1TestLogic.html#a64406b3986bc06ed21fb339e8bd0147e">ripple::Resource::ResourceManager_test::TestLogic</a>
 , <a class="el" href="classripple_1_1ServerImpl.html#a134e08537160d2088991324e7f3a5ddc">ripple::ServerImpl&lt; Handler &gt;</a>
 , <a class="el" href="classripple_1_1SSLWSPeer.html#ab378343cf70bf35c248762d31cf6094d">ripple::SSLWSPeer&lt; Handler &gt;</a>
-, <a class="el" href="classripple_1_1TaggedCache.html#ae1087cb16eac586a37682e0c868f2fc1">ripple::TaggedCache&lt; Key, T, Hash, KeyEqual, Mutex &gt;</a>
+, <a class="el" href="classripple_1_1TaggedCache.html#ac55d64946c1478480a16538eea72b0d0">ripple::TaggedCache&lt; Key, T, IsKeyCache, Hash, KeyEqual, Mutex &gt;</a>
 , <a class="el" href="classripple_1_1test_1_1csf_1_1BasicNetwork.html#a88648e3567e60340b7f3da251571e262">ripple::test::csf::BasicNetwork&lt; Peer &gt;</a>
 , <a class="el" href="classripple_1_1test_1_1csf_1_1Scheduler.html#a6bec798d034260a5001335e19c3f512f">ripple::test::csf::Scheduler</a>
 , <a class="el" href="classripple_1_1test_1_1csf_1_1Validations__test.html#aa0dc615feaad17cbadca0516089b6feb">ripple::test::csf::Validations_test</a>
@@ -165,7 +162,6 @@ $(function() {
 , <a class="el" href="classbeast_1_1List.html#a07d23c110e136d8fdd57ae5472485e48">beast::List&lt; T, Tag &gt;</a>
 , <a class="el" href="classbeast_1_1LockFreeStack.html#aefab617c271b247d871210e8c4142396">beast::LockFreeStack&lt; Element, Tag &gt;</a>
 , <a class="el" href="classJson_1_1Value.html#a6ebbc5b370efbb09c0973d7a4d7cd936">Json::Value</a>
-, <a class="el" href="classripple_1_1AcceptedLedger.html#adc3515213cd726e75d0e4f8ebea5e49f">ripple::AcceptedLedger</a>
 , <a class="el" href="classripple_1_1base__uint.html#a518df824ec540c44bd33c873708f6c90">ripple::base_uint&lt; Bits, Tag &gt;</a>
 , <a class="el" href="classripple_1_1Buffer.html#ac342941f082368f1ebed1dc81592a84e">ripple::Buffer</a>
 , <a class="el" href="classripple_1_1CanonicalTXSet.html#a31b18b74a2419d1e13a01ac7232d3b02">ripple::CanonicalTXSet</a>
@@ -176,8 +172,9 @@ $(function() {
 , <a class="el" href="classripple_1_1PeerFinder_1_1Livecache_1_1hops__t.html#a03b3cb2846dc3a216398b1416376ad5f">ripple::PeerFinder::Livecache&lt; Allocator &gt;::hops_t</a>
 , <a class="el" href="classripple_1_1PublicKey.html#a10e0ec3d1fea9cec15655278e2243f2f">ripple::PublicKey</a>
 , <a class="el" href="classripple_1_1SecretKey.html#a9fc00735015a152ea58fe25ef06bc9ea">ripple::SecretKey</a>
+, <a class="el" href="classripple_1_1Section.html#a48266e943bf130730aa6e9cbe1616b94">ripple::Section</a>
 , <a class="el" href="classripple_1_1Seed.html#ac26c3dc90d49e03a1a62ccd891d84b55">ripple::Seed</a>
-, <a class="el" href="classripple_1_1Slice.html#a27b912d49c4818a295425d1332e3c877">ripple::Slice</a>
+, <a class="el" href="classripple_1_1Slice.html#a6f70574ecc6a44893f01134750f03afb">ripple::Slice</a>
 , <a class="el" href="classripple_1_1STArray.html#a980ca49bc5349ee7663e6561d50f2399">ripple::STArray</a>
 , <a class="el" href="classripple_1_1test_1_1csf_1_1PeerGroup.html#a2763d6a8e68b884b17d7af1a9cdcdeb4">ripple::test::csf::PeerGroup</a>
 </li>
@@ -190,6 +187,7 @@ $(function() {
 , <a class="el" href="classbeast_1_1List.html#a03164255795b93fe4fb59ec168e80d5d">beast::List&lt; T, Tag &gt;</a>
 , <a class="el" href="classbeast_1_1LockFreeStack.html#ab1c9f40e6c35c2384a880b0e14a0aa0d">beast::LockFreeStack&lt; Element, Tag &gt;</a>
 , <a class="el" href="classripple_1_1base__uint.html#aa8ff31bf72223c91b6fbd51dc8ebd39e">ripple::base_uint&lt; Bits, Tag &gt;</a>
+, <a class="el" href="classripple_1_1partitioned__unordered__map.html#a4f5537e419bad0fe6591db57858c410f">ripple::partitioned_unordered_map&lt; Key, Value, Hash, Pred, Alloc &gt;</a>
 </li>
 <li>const_reference
 : <a class="el" href="classbeast_1_1detail_1_1aged__ordered__container.html#a6b8f2fd172a8b91e833a89b5fd294ba7">beast::detail::aged_ordered_container&lt; IsMulti, IsMap, Key, T, Clock, Compare, Allocator &gt;</a>
@@ -197,6 +195,7 @@ $(function() {
 , <a class="el" href="classbeast_1_1List.html#ac012e92c2402a063425bbaba5f333318">beast::List&lt; T, Tag &gt;</a>
 , <a class="el" href="classbeast_1_1LockFreeStack.html#ac208bf5e265cf6e499c2431f529c7f02">beast::LockFreeStack&lt; Element, Tag &gt;</a>
 , <a class="el" href="classripple_1_1base__uint.html#a9f82b28cdfb77b99994b05c81d0ea673">ripple::base_uint&lt; Bits, Tag &gt;</a>
+, <a class="el" href="classripple_1_1partitioned__unordered__map.html#a0cf26cd7eefbaeb8be063507796be448">ripple::partitioned_unordered_map&lt; Key, Value, Hash, Pred, Alloc &gt;</a>
 , <a class="el" href="classripple_1_1test_1_1csf_1_1PeerGroup.html#a7db68a22b278270fafb4edd3da6bf4b5">ripple::test::csf::PeerGroup</a>
 </li>
 <li>const_reverse_iterator

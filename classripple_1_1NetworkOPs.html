@@ -190,24 +190,42 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa9220ccf8382acf85ccd1043f68b9c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdcc25285fc9cb83eab4ed36d95be527"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1NetworkOPs.html#afdcc25285fc9cb83eab4ed36d95be527">pubLedger</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1ReadView.html">ReadView</a> const &gt; const &amp;lpAccepted)=0</td></tr>
 <tr class="separator:afdcc25285fc9cb83eab4ed36d95be527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a707bd1efa527ac55091d9652145cde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1NetworkOPs.html#a1a707bd1efa527ac55091d9652145cde">pubProposedTransaction</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1ReadView.html">ReadView</a> const &gt; const &amp;lpCurrent, <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1STTx.html">STTx</a> const &gt; const &amp;stTxn, <a class="el" href="namespaceripple.html#adfb760bc3e4ccb79d5d4f6ecff2f1817">TER</a> terResult)=0</td></tr>
-<tr class="separator:a1a707bd1efa527ac55091d9652145cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522a02f40a2c93b1a951ff4217478777"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1NetworkOPs.html#a522a02f40a2c93b1a951ff4217478777">pubProposedTransaction</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1ReadView.html">ReadView</a> const &gt; const &amp;ledger, <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1STTx.html">STTx</a> const &gt; const &amp;transaction, <a class="el" href="namespaceripple.html#adfb760bc3e4ccb79d5d4f6ecff2f1817">TER</a> result)=0</td></tr>
+<tr class="separator:a522a02f40a2c93b1a951ff4217478777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5228b52adce7276a83d4d0cf14991589"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1NetworkOPs.html#a5228b52adce7276a83d4d0cf14991589">pubValidation</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1STValidation.html">STValidation</a> &gt; const &amp;val)=0</td></tr>
 <tr class="separator:a5228b52adce7276a83d4d0cf14991589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7d7f55b2e28f300f0745217592d832"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1NetworkOPs.html#a6d7d7f55b2e28f300f0745217592d832">forwardValidation</a> (<a class="el" href="classJson_1_1Value.html">Json::Value</a> const &amp;jvObj)=0</td></tr>
+<tr class="separator:a6d7d7f55b2e28f300f0745217592d832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51854a2d16452823739a88ce7de648ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1NetworkOPs.html#a51854a2d16452823739a88ce7de648ab">forwardManifest</a> (<a class="el" href="classJson_1_1Value.html">Json::Value</a> const &amp;jvObj)=0</td></tr>
+<tr class="separator:a51854a2d16452823739a88ce7de648ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8bc22e121fc8db46ec0cae484d474a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1NetworkOPs.html#af8bc22e121fc8db46ec0cae484d474a2">forwardProposedTransaction</a> (<a class="el" href="classJson_1_1Value.html">Json::Value</a> const &amp;jvObj)=0</td></tr>
 <tr class="separator:af8bc22e121fc8db46ec0cae484d474a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa539c0415cfa0f8bb92381906b4a02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1NetworkOPs.html#a6aa539c0415cfa0f8bb92381906b4a02">forwardProposedAccountTransaction</a> (<a class="el" href="classJson_1_1Value.html">Json::Value</a> const &amp;jvObj)=0</td></tr>
 <tr class="separator:a6aa539c0415cfa0f8bb92381906b4a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51bff8f9e909c4983b14ba2682ac118c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1NetworkOPs.html#a51bff8f9e909c4983b14ba2682ac118c">stateAccounting</a> (<a class="el" href="classJson_1_1Value.html">Json::Value</a> &amp;obj)=0</td></tr>
+<tr class="separator:a51bff8f9e909c4983b14ba2682ac118c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea604ab89e0a3db02a467019229d3252"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#aea604ab89e0a3db02a467019229d3252">subAccount</a> (ref ispListener, <a class="el" href="namespaceripple.html#a7750eec5e079354285f1d60cfd0247ca">hash_set</a>&lt; <a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> &gt; const &amp;vnaAccountIDs, bool realTime)=0</td></tr>
 <tr class="separator:aea604ab89e0a3db02a467019229d3252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba84e61b320524b25e0c692efc8eb24a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#aba84e61b320524b25e0c692efc8eb24a">unsubAccount</a> (ref isplistener, <a class="el" href="namespaceripple.html#a7750eec5e079354285f1d60cfd0247ca">hash_set</a>&lt; <a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> &gt; const &amp;vnaAccountIDs, bool realTime)=0</td></tr>
 <tr class="separator:aba84e61b320524b25e0c692efc8eb24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92fea0de270108048be12563708c33da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#a92fea0de270108048be12563708c33da">unsubAccountInternal</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> uListener, <a class="el" href="namespaceripple.html#a7750eec5e079354285f1d60cfd0247ca">hash_set</a>&lt; <a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> &gt; const &amp;vnaAccountIDs, bool realTime)=0</td></tr>
 <tr class="separator:a92fea0de270108048be12563708c33da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1512e079849b413d377e97c56bce86a0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceripple.html#a32d6d3ce1a48272b677d2c88b1d30932">error_code_i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#a1512e079849b413d377e97c56bce86a0">subAccountHistory</a> (ref ispListener, <a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> const &amp;account)=0</td></tr>
+<tr class="memdesc:a1512e079849b413d377e97c56bce86a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribe an account's new transactions and retrieve the account's historical transactions  <a href="classripple_1_1InfoSub_1_1Source.html#a1512e079849b413d377e97c56bce86a0">More...</a><br /></td></tr>
+<tr class="separator:a1512e079849b413d377e97c56bce86a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5269f244a752bbbb23ff32c161386a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#af5269f244a752bbbb23ff32c161386a4">unsubAccountHistory</a> (ref ispListener, <a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> const &amp;account, bool historyOnly)=0</td></tr>
+<tr class="memdesc:af5269f244a752bbbb23ff32c161386a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribe an account's transactions  <a href="classripple_1_1InfoSub_1_1Source.html#af5269f244a752bbbb23ff32c161386a4">More...</a><br /></td></tr>
+<tr class="separator:af5269f244a752bbbb23ff32c161386a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad29b7fda9598d690fab8995aed1eee08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#ad29b7fda9598d690fab8995aed1eee08">unsubAccountHistoryInternal</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> uListener, <a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> const &amp;account, bool historyOnly)=0</td></tr>
+<tr class="separator:ad29b7fda9598d690fab8995aed1eee08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0b605951cb74872c096b5a816c8175c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#ad0b605951cb74872c096b5a816c8175c">subLedger</a> (ref ispListener, <a class="el" href="classJson_1_1Value.html">Json::Value</a> &amp;jvResult)=0</td></tr>
 <tr class="separator:ad0b605951cb74872c096b5a816c8175c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aa6655862d29312e9118e8d38440f58"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#a9aa6655862d29312e9118e8d38440f58">unsubLedger</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> uListener)=0</td></tr>
 <tr class="separator:a9aa6655862d29312e9118e8d38440f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638bb4c55fbededbc2c4388c8536aae1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#a638bb4c55fbededbc2c4388c8536aae1">subBookChanges</a> (ref ispListener)=0</td></tr>
+<tr class="separator:a638bb4c55fbededbc2c4388c8536aae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8ebe71987649d294b76ee492015ea8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#a9b8ebe71987649d294b76ee492015ea8">unsubBookChanges</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> uListener)=0</td></tr>
+<tr class="separator:a9b8ebe71987649d294b76ee492015ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b61d2da59461b189c512947998783c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#a82b61d2da59461b189c512947998783c">subManifests</a> (ref ispListener)=0</td></tr>
 <tr class="separator:a82b61d2da59461b189c512947998783c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb5be08317131c3dfd4a5fe64bb1842f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InfoSub_1_1Source.html#abb5be08317131c3dfd4a5fe64bb1842f">unsubManifests</a> (<a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> uListener)=0</td></tr>
@@ -1564,8 +1582,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1a707bd1efa527ac55091d9652145cde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a707bd1efa527ac55091d9652145cde">&#9670;&nbsp;</a></span>pubProposedTransaction()</h2>
+<a id="a522a02f40a2c93b1a951ff4217478777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a522a02f40a2c93b1a951ff4217478777">&#9670;&nbsp;</a></span>pubProposedTransaction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1577,19 +1595,19 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">virtual void ripple::NetworkOPs::pubProposedTransaction </td>
           <td>(</td>
           <td class="paramtype"><a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1ReadView.html">ReadView</a> const &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>lpCurrent</em>, </td>
+          <td class="paramname"><em>ledger</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1STTx.html">STTx</a> const &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>stTxn</em>, </td>
+          <td class="paramname"><em>transaction</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceripple.html#adfb760bc3e4ccb79d5d4f6ecff2f1817">TER</a>&#160;</td>
-          <td class="paramname"><em>terResult</em>&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1604,7 +1622,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#ad693a1a91bd4903121b790a16b3a5f8d">ripple::NetworkOPsImp</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#a03d6069293bde0a411dfb7d783d2e4a3">ripple::NetworkOPsImp</a>.</p>
 
 </div>
 </div>
@@ -1633,6 +1651,62 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#a7fca93ca8a1a6cdba2c887100e8e6ed8">ripple::NetworkOPsImp</a>.</p>
+
+</div>
+</div>
+<a id="a6d7d7f55b2e28f300f0745217592d832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7d7f55b2e28f300f0745217592d832">&#9670;&nbsp;</a></span>forwardValidation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ripple::NetworkOPs::forwardValidation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classJson_1_1Value.html">Json::Value</a> const &amp;&#160;</td>
+          <td class="paramname"><em>jvObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#ab758ce300807a2e5dd3e1f8c872347e6">ripple::NetworkOPsImp</a>.</p>
+
+</div>
+</div>
+<a id="a51854a2d16452823739a88ce7de648ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51854a2d16452823739a88ce7de648ab">&#9670;&nbsp;</a></span>forwardManifest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ripple::NetworkOPs::forwardManifest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classJson_1_1Value.html">Json::Value</a> const &amp;&#160;</td>
+          <td class="paramname"><em>jvObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#a56d2c5409d075d2cd12b9721b51adbd9">ripple::NetworkOPsImp</a>.</p>
 
 </div>
 </div>
@@ -1689,6 +1763,34 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#a04ffda4808b4335cb1c524b00702cd4e">ripple::NetworkOPsImp</a>.</p>
+
+</div>
+</div>
+<a id="a51bff8f9e909c4983b14ba2682ac118c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51bff8f9e909c4983b14ba2682ac118c">&#9670;&nbsp;</a></span>stateAccounting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ripple::NetworkOPs::stateAccounting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classJson_1_1Value.html">Json::Value</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#a8b1bc0c096f1d10f0537c5aac5040431">ripple::NetworkOPsImp</a>.</p>
 
 </div>
 </div>
@@ -1824,6 +1926,144 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1512e079849b413d377e97c56bce86a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1512e079849b413d377e97c56bce86a0">&#9670;&nbsp;</a></span>subAccountHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceripple.html#a32d6d3ce1a48272b677d2c88b1d30932">error_code_i</a> ripple::InfoSub::Source::subAccountHistory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classripple_1_1InfoSub.html#a35f86745473f425773220ed4b4620349">ref</a>&#160;</td>
+          <td class="paramname"><em>ispListener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> const &amp;&#160;</td>
+          <td class="paramname"><em>account</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>subscribe an account's new transactions and retrieve the account's historical transactions </p>
+<dl class="section return"><dt>Returns</dt><dd>rpcSUCCESS if successful, otherwise an error code </dd></dl>
+
+<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#ae2ed2bce9a28e6fec6ca4b2b93e6586e">ripple::NetworkOPsImp</a>.</p>
+
+</div>
+</div>
+<a id="af5269f244a752bbbb23ff32c161386a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5269f244a752bbbb23ff32c161386a4">&#9670;&nbsp;</a></span>unsubAccountHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ripple::InfoSub::Source::unsubAccountHistory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classripple_1_1InfoSub.html#a35f86745473f425773220ed4b4620349">ref</a>&#160;</td>
+          <td class="paramname"><em>ispListener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> const &amp;&#160;</td>
+          <td class="paramname"><em>account</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>historyOnly</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>unsubscribe an account's transactions </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">historyOnly</td><td>if true, only stop historical transactions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>once a client receives enough historical transactions, it should unsubscribe with historyOnly == true to stop receiving more historical transactions. It will continue to receive new transactions. </dd></dl>
+
+<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#a585d24e22d0587657e0a1f4f87f402bb">ripple::NetworkOPsImp</a>.</p>
+
+</div>
+</div>
+<a id="ad29b7fda9598d690fab8995aed1eee08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad29b7fda9598d690fab8995aed1eee08">&#9670;&nbsp;</a></span>unsubAccountHistoryInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ripple::InfoSub::Source::unsubAccountHistoryInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a>&#160;</td>
+          <td class="paramname"><em>uListener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> const &amp;&#160;</td>
+          <td class="paramname"><em>account</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>historyOnly</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#a3af0fb9cd6822f82797487a8df42b027">ripple::NetworkOPsImp</a>.</p>
+
+</div>
+</div>
 <a id="ad0b605951cb74872c096b5a816c8175c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0b605951cb74872c096b5a816c8175c">&#9670;&nbsp;</a></span>subLedger()</h2>
 
@@ -1887,6 +2127,62 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#af8371cff174d65276ea6899fcbeeb752">ripple::NetworkOPsImp</a>.</p>
+
+</div>
+</div>
+<a id="a638bb4c55fbededbc2c4388c8536aae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a638bb4c55fbededbc2c4388c8536aae1">&#9670;&nbsp;</a></span>subBookChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ripple::InfoSub::Source::subBookChanges </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classripple_1_1InfoSub.html#a35f86745473f425773220ed4b4620349">ref</a>&#160;</td>
+          <td class="paramname"><em>ispListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#acf89aa1bff48351c937e4f3e789fae25">ripple::NetworkOPsImp</a>.</p>
+
+</div>
+</div>
+<a id="a9b8ebe71987649d294b76ee492015ea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8ebe71987649d294b76ee492015ea8">&#9670;&nbsp;</a></span>unsubBookChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ripple::InfoSub::Source::unsubBookChanges </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a>&#160;</td>
+          <td class="paramname"><em>uListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classripple_1_1NetworkOPsImp.html#a0bce3f762dd3e7a64101b506035666b3">ripple::NetworkOPsImp</a>.</p>
 
 </div>
 </div>
