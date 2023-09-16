@@ -82,3 +82,55 @@ Install CMake with Homebrew too:
 ```
 brew install cmake
 ```
+
+
+## Windows
+
+There are various ways to set up a C++ development environment on
+Windows. One approach is to use the [Windows Subsystem for Linux
+(WSL)](https://docs.microsoft.com/en-us/windows/wsl/), which simplifies
+many of the Linux-based tasks on Windows.
+
+### Windows Subsystem for Linux (WSL)
+
+1. Install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install).
+   You can use WSL 2 for better performance.
+   
+2. Once installed, choose the Ubuntu distribution from the Microsoft
+   Store.
+
+3. After installing Ubuntu, open the Ubuntu terminal. Follow the Linux
+   instructions above.
+
+### Git and C++
+
+1. Download and install [Git for
+   Windows](https://git-scm.com/download/win). This will allow you to
+   use Git from the command prompt or PowerShell.
+
+2. For C++ development on Windows, consider [Visual
+   Studio](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+   During installation, select the “Desktop development with C++”
+   workload.
+
+It should be possible to build this project with Visual Studio 2019.
+
+### Python, Conan, CMake
+
+1. Download and install [Python for
+   Windows](https://www.python.org/downloads/windows/). Ensure that you
+   add Python to the system PATH during installation.
+
+2. Open a command prompt or PowerShell terminal.
+
+3. Install Conan using pip:
+   ```
+   pip install 'conan<2'
+   ```
+
+4. Download and install [CMake for
+   Windows](https://cmake.org/download/). Make sure to add CMake to the
+   system PATH during installation.
+
+With a working C++ development environment on Windows, you can follow
+the build instructions in [BUILD.md](../../BUILD.md).
