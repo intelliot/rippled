@@ -1,18 +1,19 @@
 # Fees
 
-Rippled's fee mechanism consists of several interrelated processes:
+`rippled`'s fee mechanism consists of several interrelated processes:
 
 1. [Rapid Fee escalation](#fee-escalation)
 2. [The Transaction Queue](#transaction-queue)
 
 ## Fee Escalation
 
-The guiding principal of fee escalation is that when things are going
-smoothly, fees stay low, but as soon as high levels of traffic appear
-on the network, fees will grow quickly to extreme levels. This should
-dissuade malicious users from abusing the system, while giving
-legitimate users the ability to pay a higher fee to get high-priority
-transactions into the open ledger, even during unfavorable conditions.
+The guiding principle of fee escalation is that when things are going
+smoothly, fees remain low. However, as soon as high levels of traffic
+appear on the network, fees quickly rise to extreme levels. This is
+designed to dissuade malicious users from abusing the system, while
+allowing legitimate users the ability to pay a higher fee for
+high-priority transactions. This ensures their inclusion in the open
+ledger, even under unfavorable conditions.
 
 How fees escalate:
 
@@ -175,7 +176,7 @@ than a more complex transaction paying more XRP.
 
 ### Load Fee
 
-Each rippled server maintains a minimum cost threshold based on its current load. If you submit a transaction with a fee that is lower than the current load-based transaction cost of the rippled server, the server neither applies nor relays the transaction to its peers. A transaction is very unlikely to survive the consensus process unless its transaction fee value meets the requirements of a majority of servers.
+Each `rippled` server maintains a minimum cost threshold based on its current load. If you submit a transaction with a fee that is lower than the current load-based transaction cost of the `rippled` server, the server neither applies nor relays the transaction to its peers. A transaction is very unlikely to survive the consensus process unless its transaction fee value meets the requirements of a majority of servers.
 
 ### Reference Transaction
 
@@ -183,10 +184,7 @@ In this document, a "Reference Transaction" is any currently implemented
 single-signed transaction (eg. Payment, Account Set, Offer Create, etc)
 that requires a fee.
 
-In the future, there may be other transaction types that require
-more (or less) work for rippled to process. Those transactions may have
-a higher (or lower) base fee, requiring a correspondingly higher (or
-lower) fee to get into the same position as a reference transaction.
+There are other transaction types that may have a higher base fee, particularly in cases where the transaction is likely to require more work for `rippled` to process. These transactions require a correspondingly higher fee to achieve the same position as a reference transaction.
 
 ### Consensus Health
 
