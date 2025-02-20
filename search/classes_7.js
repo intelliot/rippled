@@ -16,7 +16,7 @@ var searchData=
   ['hash_3c_20ripple_3a_3adirectory_20_3e_13',['hash&lt; ripple::Directory &gt;',['../structstd_1_1hash_3_01ripple_1_1Directory_01_4.html',1,'std']]],
   ['hash_3c_20ripple_3a_3aissue_20_3e_14',['hash&lt; ripple::Issue &gt;',['../structboost_1_1hash_3_01ripple_1_1Issue_01_4.html',1,'boost::hash&lt; ripple::Issue &gt;'],['../structstd_1_1hash_3_01ripple_1_1Issue_01_4.html',1,'std::hash&lt; ripple::Issue &gt;']]],
   ['hash_3c_20ripple_3a_3anodeid_20_3e_15',['hash&lt; ripple::NodeID &gt;',['../structstd_1_1hash_3_01ripple_1_1NodeID_01_4.html',1,'std']]],
-  ['hash_3c_20std_3a_3apair_3c_20first_2c_20second_20_3e_20_3e_16',['hash&lt; std::pair&lt; First, Second &gt; &gt;',['../structstd_1_1hash_3_01std_1_1pair_3_01First_00_01Second_01_4_01_4.html',1,'std']]],
+  ['hash_3c_20ripple_3a_3auint256_20_3e_16',['hash&lt; ripple::uint256 &gt;',['../structstd_1_1hash_3_01ripple_1_1uint256_01_4.html',1,'std']]],
   ['hash_3c_20t_20_3e_17',['hash&lt; T &gt;',['http://en.cppreference.com/w/cpp/utility/hash.html',1,'std']]],
   ['hash_3c_3a_3abeast_3a_3aip_3a_3aaddress_20_3e_18',['hash&lt;::beast::IP::Address &gt;',['../structboost_1_1hash_3_1_1beast_1_1IP_1_1Address_01_4.html',1,'boost']]],
   ['hash_3c_3a_3abeast_3a_3aip_3a_3aendpoint_20_3e_19',['hash&lt;::beast::IP::Endpoint &gt;',['../structboost_1_1hash_3_1_1beast_1_1IP_1_1Endpoint_01_4.html',1,'boost::hash&lt;::beast::IP::Endpoint &gt;'],['../structstd_1_1hash_3_1_1beast_1_1IP_1_1Endpoint_01_4.html',1,'std::hash&lt;::beast::IP::Endpoint &gt;']]],
@@ -39,7 +39,5 @@ var searchData=
   ['hours_36',['hours',['http://en.cppreference.com/w/cpp/chrono/duration.html',1,'std::chrono']]],
   ['httpclient_37',['HTTPClient',['../classripple_1_1HTTPClient.html',1,'ripple']]],
   ['httpclientimp_38',['HTTPClientImp',['../classripple_1_1HTTPClientImp.html',1,'ripple']]],
-  ['httpclientsslcontext_39',['HTTPClientSSLContext',['../classripple_1_1HTTPClientSSLContext.html',1,'ripple']]],
-  ['httpdownloader_40',['HTTPDownloader',['../classripple_1_1HTTPDownloader.html',1,'ripple']]],
-  ['httpstream_41',['HTTPStream',['../classripple_1_1HTTPStream.html',1,'ripple']]]
+  ['httpclientsslcontext_39',['HTTPClientSSLContext',['../classripple_1_1HTTPClientSSLContext.html',1,'ripple']]]
 ];

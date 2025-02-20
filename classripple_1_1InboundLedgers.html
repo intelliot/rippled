@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a69b145089704c611f56786ace0262abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a504951d354fa8cbd7c0d41f90f776a4f"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1Ledger.html">Ledger</a> const &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InboundLedgers.html#a504951d354fa8cbd7c0d41f90f776a4f">acquire</a> (<a class="el" href="namespaceripple.html#a356c68147333a9a48a344718038576d9">uint256</a> const &amp;hash, <a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> seq, <a class="el" href="classripple_1_1InboundLedger.html#a3e8d7f8b5fa089a184dcc9b00b6e0da7">InboundLedger::Reason</a>)=0</td></tr>
 <tr class="separator:a504951d354fa8cbd7c0d41f90f776a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f947ae377258e360a593100db329100"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InboundLedgers.html#a2f947ae377258e360a593100db329100">acquireAsync</a> (<a class="el" href="namespaceripple.html#a356c68147333a9a48a344718038576d9">uint256</a> const &amp;hash, <a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> seq, <a class="el" href="classripple_1_1InboundLedger.html#a3e8d7f8b5fa089a184dcc9b00b6e0da7">InboundLedger::Reason</a> reason)=0</td></tr>
+<tr class="separator:a2f947ae377258e360a593100db329100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d54affab86e8dcc634bbcd926019ef1"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1InboundLedger.html">InboundLedger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InboundLedgers.html#a8d54affab86e8dcc634bbcd926019ef1">find</a> (<a class="el" href="namespaceripple.html#af5a72d3e0d9b6913c13f688390b90796">LedgerHash</a> const &amp;hash)=0</td></tr>
 <tr class="separator:a8d54affab86e8dcc634bbcd926019ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600000acda36c21ecc1f29defe89a278"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1InboundLedgers.html#a600000acda36c21ecc1f29defe89a278">gotLedgerData</a> (<a class="el" href="namespaceripple.html#af5a72d3e0d9b6913c13f688390b90796">LedgerHash</a> const &amp;ledgerHash, <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; <a class="el" href="classripple_1_1Peer.html">Peer</a> &gt;, <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; protocol::TMLedgerData &gt;)=0</td></tr>
@@ -140,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p >Manages the lifetime of inbound ledgers. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classripple_1_1InboundLedger.html">InboundLedger</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="InboundLedgers_8h_source.html#l00033">33</a> of file <a class="el" href="InboundLedgers_8h_source.html">InboundLedgers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InboundLedgers_8h_source.html#l00034">34</a> of file <a class="el" href="InboundLedgers_8h_source.html">InboundLedgers.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0b264439abc0967cb47ebd106c0d62f6" name="a0b264439abc0967cb47ebd106c0d62f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b264439abc0967cb47ebd106c0d62f6">&#9670;&#160;</a></span>clock_type</h2>
@@ -154,7 +156,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="InboundLedgers_8h_source.html#l00036">36</a> of file <a class="el" href="InboundLedgers_8h_source.html">InboundLedgers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InboundLedgers_8h_source.html#l00037">37</a> of file <a class="el" href="InboundLedgers_8h_source.html">InboundLedgers.h</a>.</p>
 
 </div>
 </div>
@@ -229,6 +231,50 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2f947ae377258e360a593100db329100" name="a2f947ae377258e360a593100db329100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f947ae377258e360a593100db329100">&#9670;&#160;</a></span>acquireAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ripple::InboundLedgers::acquireAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceripple.html#a356c68147333a9a48a344718038576d9">uint256</a> const &amp;&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a>&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classripple_1_1InboundLedger.html#a3e8d7f8b5fa089a184dcc9b00b6e0da7">InboundLedger::Reason</a>&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a08b979d6bf0f113b252cb1573214842c">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#aa664e171b1570a5e426f1fa342b46891">ripple::InboundLedgersImp</a>.</p>
+
+</div>
+</div>
 <a id="a8d54affab86e8dcc634bbcd926019ef1" name="a8d54affab86e8dcc634bbcd926019ef1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d54affab86e8dcc634bbcd926019ef1">&#9670;&#160;</a></span>find()</h2>
 
@@ -253,7 +299,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a4d45327225ec164ac3a96d9abb259e33">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#abdffc8bdffa21d6868b8fbdf71dc6c01">ripple::InboundLedgersImp</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a4d45327225ec164ac3a96d9abb259e33">ripple::test::MagicInboundLedgers</a>.</p>
 
 </div>
 </div>
@@ -363,7 +409,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#a6bf9e1542579f52723b136fa43dbe1e7">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a8b5dec1e1d8d856f4406c59b63c6174c">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a8b5dec1e1d8d856f4406c59b63c6174c">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#a6bf9e1542579f52723b136fa43dbe1e7">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>
@@ -391,7 +437,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#ae4a2ffebfe62cf8b4d606c0590e866c7">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#aa284042ad6d4bea239c65803884f2b54">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#aa284042ad6d4bea239c65803884f2b54">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#ae4a2ffebfe62cf8b4d606c0590e866c7">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>
@@ -418,7 +464,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#a012aae8d9bdc9b8556d9319217228210">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a2a0e7fb5a536af0345a8907127699add">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a2a0e7fb5a536af0345a8907127699add">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#a012aae8d9bdc9b8556d9319217228210">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +491,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#a4542637e8a4d75ae96a8dec456038a7b">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a5cc0f2ed06a80fc9d04d346edf0caa4c">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a5cc0f2ed06a80fc9d04d346edf0caa4c">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#a4542637e8a4d75ae96a8dec456038a7b">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>
@@ -474,7 +520,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the rate of historical ledger fetches per minute. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#ab901198c8351967199bcb95bfb7162d5">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#ad121c705b23993a932db17e2e4a21ae1">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#ad121c705b23993a932db17e2e4a21ae1">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#ab901198c8351967199bcb95bfb7162d5">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>
@@ -503,7 +549,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Called when a complete ledger is obtained. </p>
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#ac51f712bab614e07330b6859ef447d44">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a13db828e982bb41618dea15a8b01e003">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a13db828e982bb41618dea15a8b01e003">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#ac51f712bab614e07330b6859ef447d44">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>
@@ -530,7 +576,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#a3f1dab2ad47bcf10ad51497ad503a7ea">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#ad721f621115df060fa2f9882dd8891d7">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#ad721f621115df060fa2f9882dd8891d7">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#a3f1dab2ad47bcf10ad51497ad503a7ea">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>
@@ -557,7 +603,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#a56c2e865dd2f67eef9cf7516d5f57876">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a3b9573297de275d86c441ac4cc5b2d49">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a3b9573297de275d86c441ac4cc5b2d49">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#a56c2e865dd2f67eef9cf7516d5f57876">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>
@@ -584,7 +630,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#a88e8fd50a41647c9c50909858eeff941">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a624ebbf034f8c0d13e795ee4b22c33a5">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a624ebbf034f8c0d13e795ee4b22c33a5">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#a88e8fd50a41647c9c50909858eeff941">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>
@@ -611,7 +657,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1InboundLedgersImp.html#a067df4bc98f0ac69bddc48a7a241af7b">ripple::InboundLedgersImp</a>, and <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a76b767a94cdcc71676302a7958daf57c">ripple::test::MagicInboundLedgers</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1test_1_1MagicInboundLedgers.html#a76b767a94cdcc71676302a7958daf57c">ripple::test::MagicInboundLedgers</a>, and <a class="el" href="classripple_1_1InboundLedgersImp.html#a067df4bc98f0ac69bddc48a7a241af7b">ripple::InboundLedgersImp</a>.</p>
 
 </div>
 </div>

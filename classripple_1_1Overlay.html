@@ -181,9 +181,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf8edd8c9f7c0ab6b4556f94e6abb69d"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="http://en.cppreference.com/w/cpp/container/set.html">std::set</a>&lt; <a class="el" href="classripple_1_1Peer.html#a56cc3cdd9c73921f23cb43a2bfa696a1">Peer::id_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Overlay.html#acf8edd8c9f7c0ab6b4556f94e6abb69d">relay</a> (protocol::TMValidation &amp;m, <a class="el" href="namespaceripple.html#a356c68147333a9a48a344718038576d9">uint256</a> const &amp;uid, <a class="el" href="classripple_1_1PublicKey.html">PublicKey</a> const &amp;validator)=0</td></tr>
 <tr class="memdesc:acf8edd8c9f7c0ab6b4556f94e6abb69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay a validation.  <a href="classripple_1_1Overlay.html#acf8edd8c9f7c0ab6b4556f94e6abb69d">More...</a><br /></td></tr>
 <tr class="separator:acf8edd8c9f7c0ab6b4556f94e6abb69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a876aee0822b3e6b83e236f5ea531ae50"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Overlay.html#a876aee0822b3e6b83e236f5ea531ae50">relay</a> (<a class="el" href="namespaceripple.html#a356c68147333a9a48a344718038576d9">uint256</a> const &amp;hash, protocol::TMTransaction &amp;m, <a class="elRef" href="http://en.cppreference.com/w/cpp/container/set.html">std::set</a>&lt; <a class="el" href="classripple_1_1Peer.html#a56cc3cdd9c73921f23cb43a2bfa696a1">Peer::id_t</a> &gt; const &amp;toSkip)=0</td></tr>
-<tr class="memdesc:a876aee0822b3e6b83e236f5ea531ae50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay a transaction.  <a href="classripple_1_1Overlay.html#a876aee0822b3e6b83e236f5ea531ae50">More...</a><br /></td></tr>
-<tr class="separator:a876aee0822b3e6b83e236f5ea531ae50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086f3a1c8c9f3cbe335a7ffe1bf7db3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Overlay.html#a086f3a1c8c9f3cbe335a7ffe1bf7db3f">relay</a> (<a class="el" href="namespaceripple.html#a356c68147333a9a48a344718038576d9">uint256</a> const &amp;hash, <a class="elRef" href="http://en.cppreference.com/w/cpp/utility/optional.html">std::optional</a>&lt; <a class="elRef" href="http://en.cppreference.com/w/cpp/utility/functional/reference_wrapper.html">std::reference_wrapper</a>&lt; protocol::TMTransaction &gt; &gt; m, <a class="elRef" href="http://en.cppreference.com/w/cpp/container/set.html">std::set</a>&lt; <a class="el" href="classripple_1_1Peer.html#a56cc3cdd9c73921f23cb43a2bfa696a1">Peer::id_t</a> &gt; const &amp;toSkip)=0</td></tr>
+<tr class="memdesc:a086f3a1c8c9f3cbe335a7ffe1bf7db3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay a transaction.  <a href="classripple_1_1Overlay.html#a086f3a1c8c9f3cbe335a7ffe1bf7db3f">More...</a><br /></td></tr>
+<tr class="separator:a086f3a1c8c9f3cbe335a7ffe1bf7db3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace401ddd7d28c698af38c35ef8fc06e3"><td class="memTemplParams" colspan="2">template&lt;class Function &gt; </td></tr>
 <tr class="memitem:ace401ddd7d28c698af38c35ef8fc06e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classripple_1_1Overlay.html#ace401ddd7d28c698af38c35ef8fc06e3">foreach</a> (Function f) const</td></tr>
 <tr class="memdesc:ace401ddd7d28c698af38c35ef8fc06e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visit every active peer.  <a href="classripple_1_1Overlay.html#ace401ddd7d28c698af38c35ef8fc06e3">More...</a><br /></td></tr>
@@ -202,9 +202,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aec328d6f85cbcd124353566f4c948ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af00afb4bb76983b57ff67a1f62b6185e"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Overlay.html#af00afb4bb76983b57ff67a1f62b6185e">getPeerDisconnectCharges</a> () const =0</td></tr>
 <tr class="separator:af00afb4bb76983b57ff67a1f62b6185e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a5ec50b42d082f8566136ba68087f9e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classJson_1_1Value.html">Json::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Overlay.html#a7a5ec50b42d082f8566136ba68087f9e">crawlShards</a> (bool includePublicKey, <a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> hops)=0</td></tr>
-<tr class="memdesc:a7a5ec50b42d082f8566136ba68087f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information reported to the crawl shard <a class="el" href="namespaceripple_1_1RPC.html" title="API version numbers used in later API versions.">RPC</a> command.  <a href="classripple_1_1Overlay.html#a7a5ec50b42d082f8566136ba68087f9e">More...</a><br /></td></tr>
-<tr class="separator:a7a5ec50b42d082f8566136ba68087f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66caa10ee0ea3ed74fa1a95982973f3d"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" href="http://en.cppreference.com/w/cpp/utility/optional.html">std::optional</a>&lt; <a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Overlay.html#a66caa10ee0ea3ed74fa1a95982973f3d">networkID</a> () const =0</td></tr>
 <tr class="memdesc:a66caa10ee0ea3ed74fa1a95982973f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of the network this server is configured for, if any.  <a href="classripple_1_1Overlay.html#a66caa10ee0ea3ed74fa1a95982973f3d">More...</a><br /></td></tr>
 <tr class="separator:a66caa10ee0ea3ed74fa1a95982973f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -955,8 +952,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a876aee0822b3e6b83e236f5ea531ae50" name="a876aee0822b3e6b83e236f5ea531ae50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a876aee0822b3e6b83e236f5ea531ae50">&#9670;&#160;</a></span>relay() <span class="overload">[3/3]</span></h2>
+<a id="a086f3a1c8c9f3cbe335a7ffe1bf7db3f" name="a086f3a1c8c9f3cbe335a7ffe1bf7db3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086f3a1c8c9f3cbe335a7ffe1bf7db3f">&#9670;&#160;</a></span>relay() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -973,7 +970,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">protocol::TMTransaction &amp;&#160;</td>
+          <td class="paramtype"><a class="elRef" href="http://en.cppreference.com/w/cpp/utility/optional.html">std::optional</a>&lt; <a class="elRef" href="http://en.cppreference.com/w/cpp/utility/functional/reference_wrapper.html">std::reference_wrapper</a>&lt; protocol::TMTransaction &gt; &gt;&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
@@ -1005,7 +1002,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classripple_1_1OverlayImpl.html#a960a7f99133f717f3cd36a1cfd4e48d6">ripple::OverlayImpl</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1OverlayImpl.html#aac479ff52203b9e9928474b21b4c4a22">ripple::OverlayImpl</a>.</p>
 
 </div>
 </div>
@@ -1206,53 +1203,6 @@ template&lt;class Function &gt; </div>
 
 </div>
 </div>
-<a id="a7a5ec50b42d082f8566136ba68087f9e" name="a7a5ec50b42d082f8566136ba68087f9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a5ec50b42d082f8566136ba68087f9e">&#9670;&#160;</a></span>crawlShards()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classJson_1_1Value.html">Json::Value</a> ripple::Overlay::crawlShards </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>includePublicKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a>&#160;</td>
-          <td class="paramname"><em>hops</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns information reported to the crawl shard <a class="el" href="namespaceripple_1_1RPC.html" title="API version numbers used in later API versions.">RPC</a> command. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">includePublicKey</td><td>include peer public keys in the result. </td></tr>
-    <tr><td class="paramname">hops</td><td>the maximum jumps the crawler will attempt. The number of hops achieved is not guaranteed. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="classripple_1_1OverlayImpl.html#a0ac90af4439cebc4a45ed268643e125a">ripple::OverlayImpl</a>.</p>
-
-</div>
-</div>
 <a id="a66caa10ee0ea3ed74fa1a95982973f3d" name="a66caa10ee0ea3ed74fa1a95982973f3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66caa10ee0ea3ed74fa1a95982973f3d">&#9670;&#160;</a></span>networkID()</h2>
 
@@ -1432,7 +1382,7 @@ template&lt;class Derived &gt; </div>
 
 <p>Remove a child source from this Source. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00208">208</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00210">210</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1461,7 +1411,7 @@ template&lt;class Derived &gt; </div>
 
 <p>Remove all child sources from this Source. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00220">220</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00224">224</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1491,7 +1441,7 @@ template&lt;class Derived &gt; </div>
 
 <p>Write only this Source to the stream. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00233">233</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00237">237</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1521,7 +1471,7 @@ template&lt;class Derived &gt; </div>
 
 <p>write this source and all its children recursively to the stream. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00240">240</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00244">244</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1562,7 +1512,7 @@ template&lt;class Derived &gt; </div>
 <p>Parse the path and write the corresponding Source and optional children. </p>
 <p >If the source is found, it is written. If the wildcard character '*' exists as the last character in the path, then all the children are written recursively. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00252">252</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00256">256</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1594,7 +1544,7 @@ template&lt;class Derived &gt; </div>
 <p >The first value will be a pointer to the Source object corresponding to the given path. If no Source object exists, then the first value will be nullptr and the second value will be undefined. The second value is a boolean indicating whether or not the path string specifies the wildcard character '*' as the last character.</p>
 <p >print statement examples "parent.child" prints child and all of its children "parent.child." start at the parent and print down to child "parent.grandchild" prints nothing- grandchild not direct discendent "parent.grandchild." starts at the parent and prints down to grandchild "parent.grandchild.*" starts at parent, print through grandchild children </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00266">266</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00270">270</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1622,7 +1572,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00333">333</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00337">337</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1650,7 +1600,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00350">350</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00354">354</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1678,7 +1628,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00368">368</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00372">372</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1706,7 +1656,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00286">286</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00290">290</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1734,7 +1684,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00297">297</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00301">301</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1762,7 +1712,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00313">313</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00317">317</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1793,9 +1743,9 @@ template&lt;class Derived &gt; </div>
 <p>Subclass override. </p>
 <p >The default version does nothing. </p>
 
-<p>Reimplemented in <a class="el" href="classripple_1_1LedgerCleanerImp.html#acafe1b2bea4bb3820cb697ce5fa711b4">ripple::LedgerCleanerImp</a>, <a class="el" href="classripple_1_1PeerFinder_1_1ManagerImp.html#a870c8e53e39d362015e4b165fa0be489">ripple::PeerFinder::ManagerImp</a>, <a class="el" href="classripple_1_1Resource_1_1ManagerImp.html#a527375e0f24eac6dd82caeeb7cd42cc5">ripple::Resource::ManagerImp</a>, <a class="el" href="classripple_1_1ApplicationImp.html#afe72bf359aadee6192a2ec13be0c279f">ripple::ApplicationImp</a>, and <a class="el" href="classripple_1_1OverlayImpl.html#a20efec9ce4b1701e4a988430465cbe24">ripple::OverlayImpl</a>.</p>
+<p>Reimplemented in <a class="el" href="classripple_1_1Resource_1_1ManagerImp.html#a527375e0f24eac6dd82caeeb7cd42cc5">ripple::Resource::ManagerImp</a>, <a class="el" href="classripple_1_1LedgerCleanerImp.html#acafe1b2bea4bb3820cb697ce5fa711b4">ripple::LedgerCleanerImp</a>, <a class="el" href="classripple_1_1PeerFinder_1_1ManagerImp.html#a870c8e53e39d362015e4b165fa0be489">ripple::PeerFinder::ManagerImp</a>, <a class="el" href="classripple_1_1ApplicationImp.html#afe72bf359aadee6192a2ec13be0c279f">ripple::ApplicationImp</a>, and <a class="el" href="classripple_1_1OverlayImpl.html#a20efec9ce4b1701e4a988430465cbe24">ripple::OverlayImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00380">380</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00384">384</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>

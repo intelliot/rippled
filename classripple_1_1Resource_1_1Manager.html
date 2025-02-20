@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a031c6f28346713cb93ea3ff9018f6a9a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classripple_1_1Resource_1_1Consumer.html">Consumer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Resource_1_1Manager.html#a031c6f28346713cb93ea3ff9018f6a9a">newInboundEndpoint</a> (<a class="el" href="classbeast_1_1IP_1_1Endpoint.html">beast::IP::Endpoint</a> const &amp;address)=0</td></tr>
 <tr class="memdesc:a031c6f28346713cb93ea3ff9018f6a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new endpoint keyed by inbound IP address or the forwarded IP if proxied.  <a href="classripple_1_1Resource_1_1Manager.html#a031c6f28346713cb93ea3ff9018f6a9a">More...</a><br /></td></tr>
 <tr class="separator:a031c6f28346713cb93ea3ff9018f6a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca310730ac596bb90ac9922d088864b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classripple_1_1Resource_1_1Consumer.html">Consumer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Resource_1_1Manager.html#a8ca310730ac596bb90ac9922d088864b">newInboundEndpoint</a> (<a class="el" href="classbeast_1_1IP_1_1Endpoint.html">beast::IP::Endpoint</a> const &amp;address, bool const proxy, boost::string_view const &amp;<a class="el" href="namespaceripple.html#a8fdfc19db800245e87ac4f66f0304092">forwardedFor</a>)=0</td></tr>
-<tr class="separator:a8ca310730ac596bb90ac9922d088864b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645857a391d946ff5d684a9b379be319"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classripple_1_1Resource_1_1Consumer.html">Consumer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Resource_1_1Manager.html#a645857a391d946ff5d684a9b379be319">newInboundEndpoint</a> (<a class="el" href="classbeast_1_1IP_1_1Endpoint.html">beast::IP::Endpoint</a> const &amp;address, bool const proxy, <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string_view.html">std::string_view</a> <a class="el" href="namespaceripple.html#aa1d2bbcba6f5e3838895165723dae5f0">forwardedFor</a>)=0</td></tr>
+<tr class="separator:a645857a391d946ff5d684a9b379be319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4ffe7b5b4c60c74ab86c29bf212377e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classripple_1_1Resource_1_1Consumer.html">Consumer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1Resource_1_1Manager.html#ad4ffe7b5b4c60c74ab86c29bf212377e">newOutboundEndpoint</a> (<a class="el" href="classbeast_1_1IP_1_1Endpoint.html">beast::IP::Endpoint</a> const &amp;address)=0</td></tr>
 <tr class="memdesc:ad4ffe7b5b4c60c74ab86c29bf212377e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new endpoint keyed by outbound IP address and port.  <a href="classripple_1_1Resource_1_1Manager.html#ad4ffe7b5b4c60c74ab86c29bf212377e">More...</a><br /></td></tr>
 <tr class="separator:ad4ffe7b5b4c60c74ab86c29bf212377e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,7 +235,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ResourceManager_8cpp_source.html#l00166">166</a> of file <a class="el" href="ResourceManager_8cpp_source.html">ResourceManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ResourceManager_8cpp_source.html#l00165">165</a> of file <a class="el" href="ResourceManager_8cpp_source.html">ResourceManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,8 +295,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ca310730ac596bb90ac9922d088864b" name="a8ca310730ac596bb90ac9922d088864b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ca310730ac596bb90ac9922d088864b">&#9670;&#160;</a></span>newInboundEndpoint() <span class="overload">[2/2]</span></h2>
+<a id="a645857a391d946ff5d684a9b379be319" name="a645857a391d946ff5d684a9b379be319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645857a391d946ff5d684a9b379be319">&#9670;&#160;</a></span>newInboundEndpoint() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +319,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::string_view const &amp;&#160;</td>
+          <td class="paramtype"><a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string_view.html">std::string_view</a>&#160;</td>
           <td class="paramname"><em>forwardedFor</em>&#160;</td>
         </tr>
         <tr>
@@ -335,7 +335,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classripple_1_1Resource_1_1ManagerImp.html#ad5e845d883eab4afc9327ae3f571efc5">ripple::Resource::ManagerImp</a>.</p>
+<p>Implemented in <a class="el" href="classripple_1_1Resource_1_1ManagerImp.html#a77da3faa04523505150bbbc791d54b12">ripple::Resource::ManagerImp</a>.</p>
 
 </div>
 </div>
@@ -649,7 +649,7 @@ template&lt;class Derived &gt; </div>
 
 <p>Remove a child source from this Source. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00208">208</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00210">210</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -678,7 +678,7 @@ template&lt;class Derived &gt; </div>
 
 <p>Remove all child sources from this Source. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00220">220</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00224">224</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -708,7 +708,7 @@ template&lt;class Derived &gt; </div>
 
 <p>Write only this Source to the stream. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00233">233</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00237">237</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -738,7 +738,7 @@ template&lt;class Derived &gt; </div>
 
 <p>write this source and all its children recursively to the stream. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00240">240</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00244">244</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -779,7 +779,7 @@ template&lt;class Derived &gt; </div>
 <p>Parse the path and write the corresponding Source and optional children. </p>
 <p >If the source is found, it is written. If the wildcard character '*' exists as the last character in the path, then all the children are written recursively. </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00252">252</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00256">256</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -811,7 +811,7 @@ template&lt;class Derived &gt; </div>
 <p >The first value will be a pointer to the Source object corresponding to the given path. If no Source object exists, then the first value will be nullptr and the second value will be undefined. The second value is a boolean indicating whether or not the path string specifies the wildcard character '*' as the last character.</p>
 <p >print statement examples "parent.child" prints child and all of its children "parent.child." start at the parent and print down to child "parent.grandchild" prints nothing- grandchild not direct discendent "parent.grandchild." starts at the parent and prints down to grandchild "parent.grandchild.*" starts at parent, print through grandchild children </p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00266">266</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00270">270</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -839,7 +839,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00333">333</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00337">337</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -867,7 +867,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00350">350</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00354">354</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -895,7 +895,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00368">368</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00372">372</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -923,7 +923,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00286">286</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00290">290</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -951,7 +951,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00297">297</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00301">301</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -979,7 +979,7 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00313">313</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00317">317</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>
@@ -1010,9 +1010,9 @@ template&lt;class Derived &gt; </div>
 <p>Subclass override. </p>
 <p >The default version does nothing. </p>
 
-<p>Reimplemented in <a class="el" href="classripple_1_1LedgerCleanerImp.html#acafe1b2bea4bb3820cb697ce5fa711b4">ripple::LedgerCleanerImp</a>, <a class="el" href="classripple_1_1PeerFinder_1_1ManagerImp.html#a870c8e53e39d362015e4b165fa0be489">ripple::PeerFinder::ManagerImp</a>, <a class="el" href="classripple_1_1Resource_1_1ManagerImp.html#a527375e0f24eac6dd82caeeb7cd42cc5">ripple::Resource::ManagerImp</a>, <a class="el" href="classripple_1_1ApplicationImp.html#afe72bf359aadee6192a2ec13be0c279f">ripple::ApplicationImp</a>, and <a class="el" href="classripple_1_1OverlayImpl.html#a20efec9ce4b1701e4a988430465cbe24">ripple::OverlayImpl</a>.</p>
+<p>Reimplemented in <a class="el" href="classripple_1_1Resource_1_1ManagerImp.html#a527375e0f24eac6dd82caeeb7cd42cc5">ripple::Resource::ManagerImp</a>, <a class="el" href="classripple_1_1LedgerCleanerImp.html#acafe1b2bea4bb3820cb697ce5fa711b4">ripple::LedgerCleanerImp</a>, <a class="el" href="classripple_1_1PeerFinder_1_1ManagerImp.html#a870c8e53e39d362015e4b165fa0be489">ripple::PeerFinder::ManagerImp</a>, <a class="el" href="classripple_1_1ApplicationImp.html#afe72bf359aadee6192a2ec13be0c279f">ripple::ApplicationImp</a>, and <a class="el" href="classripple_1_1OverlayImpl.html#a20efec9ce4b1701e4a988430465cbe24">ripple::OverlayImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00380">380</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="beast__PropertyStream_8cpp_source.html#l00384">384</a> of file <a class="el" href="beast__PropertyStream_8cpp_source.html">beast_PropertyStream.cpp</a>.</p>
 
 </div>
 </div>

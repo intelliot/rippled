@@ -116,18 +116,19 @@ Collaboration diagram for ripple::TypedField&lt; T &gt;:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a79f4a056fd0ef5a54a31de6245a019cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structripple_1_1TypedField.html#a79f4a056fd0ef5a54a31de6245a019cc">type</a> = T</td></tr>
 <tr class="separator:a79f4a056fd0ef5a54a31de6245a019cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab09fd4d4e594265bb88f17e6d7d8b037"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="classripple_1_1SField.html#ab09fd4d4e594265bb88f17e6d7d8b037a16f5e124abba72dd7fee5cbc6a166bc1">sMD_Never</a> = 0x00
-, <a class="el" href="classripple_1_1SField.html#ab09fd4d4e594265bb88f17e6d7d8b037a59b670b9992a3b5a100d52daca630353">sMD_ChangeOrig</a> = 0x01
-, <a class="el" href="classripple_1_1SField.html#ab09fd4d4e594265bb88f17e6d7d8b037a0029817db1b7656ff16bc754b77b816b">sMD_ChangeNew</a> = 0x02
-, <a class="el" href="classripple_1_1SField.html#ab09fd4d4e594265bb88f17e6d7d8b037a27eebffbb3870e6dec971a4e5eab508e">sMD_DeleteFinal</a> = 0x04
+<tr class="memitem:af94c0c2a22f5292a328510d2abfd4606"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="classripple_1_1SField.html#af94c0c2a22f5292a328510d2abfd4606a16f5e124abba72dd7fee5cbc6a166bc1">sMD_Never</a> = 0x00
+, <a class="el" href="classripple_1_1SField.html#af94c0c2a22f5292a328510d2abfd4606a59b670b9992a3b5a100d52daca630353">sMD_ChangeOrig</a> = 0x01
+, <a class="el" href="classripple_1_1SField.html#af94c0c2a22f5292a328510d2abfd4606a0029817db1b7656ff16bc754b77b816b">sMD_ChangeNew</a> = 0x02
+, <a class="el" href="classripple_1_1SField.html#af94c0c2a22f5292a328510d2abfd4606a27eebffbb3870e6dec971a4e5eab508e">sMD_DeleteFinal</a> = 0x04
 , <br />
-&#160;&#160;<a class="el" href="classripple_1_1SField.html#ab09fd4d4e594265bb88f17e6d7d8b037a999d199098173271796050f2a3c40fad">sMD_Create</a> = 0x08
-, <a class="el" href="classripple_1_1SField.html#ab09fd4d4e594265bb88f17e6d7d8b037aac5fc3d945894a116e771a4b04e33847">sMD_Always</a> = 0x10
-, <a class="el" href="classripple_1_1SField.html#ab09fd4d4e594265bb88f17e6d7d8b037ae46e414a936731e9c92ac910d935a6a0">sMD_Default</a>
+&#160;&#160;<a class="el" href="classripple_1_1SField.html#af94c0c2a22f5292a328510d2abfd4606a999d199098173271796050f2a3c40fad">sMD_Create</a> = 0x08
+, <a class="el" href="classripple_1_1SField.html#af94c0c2a22f5292a328510d2abfd4606aac5fc3d945894a116e771a4b04e33847">sMD_Always</a> = 0x10
+, <a class="el" href="classripple_1_1SField.html#af94c0c2a22f5292a328510d2abfd4606a7c89523c0f7efdeb2071da00f23ac056">sMD_BaseTen</a> = 0x20
+, <a class="el" href="classripple_1_1SField.html#af94c0c2a22f5292a328510d2abfd4606ae46e414a936731e9c92ac910d935a6a0">sMD_Default</a>
 <br />
  }</td></tr>
-<tr class="separator:ab09fd4d4e594265bb88f17e6d7d8b037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af94c0c2a22f5292a328510d2abfd4606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadcc78aed20dbdb0a4fb86867bb56ab0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1SField.html#aadcc78aed20dbdb0a4fb86867bb56ab0">IsSigning</a> : unsigned char { <a class="el" href="classripple_1_1SField.html#aadcc78aed20dbdb0a4fb86867bb56ab0a7fa3b767c460b54a2be4d49030b349c7">no</a>
 , <a class="el" href="classripple_1_1SField.html#aadcc78aed20dbdb0a4fb86867bb56ab0aa6105c0a611b41b08f1209506350279e">yes</a>
  }</td></tr>
@@ -144,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a39c81719f78ce09f09def6a30494f2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dbe53201e8c3c851affc511e2e3b556"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classJson_1_1StaticString.html">Json::StaticString</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1SField.html#a0dbe53201e8c3c851affc511e2e3b556">getJsonName</a> () const</td></tr>
 <tr class="separator:a0dbe53201e8c3c851affc511e2e3b556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3bb99f842ef8fc1647a1d12f99c6aea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1SField.html#ae3bb99f842ef8fc1647a1d12f99c6aea">operator Json::StaticString const &amp;</a> () const</td></tr>
+<tr class="separator:ae3bb99f842ef8fc1647a1d12f99c6aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a368675044e2d7737ad512b32f065f2dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1SField.html#a368675044e2d7737ad512b32f065f2dd">isInvalid</a> () const</td></tr>
 <tr class="separator:a368675044e2d7737ad512b32f065f2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade495eacddd4ad40287a62f9032fb74c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1SField.html#ade495eacddd4ad40287a62f9032fb74c">isUseful</a> () const</td></tr>
@@ -217,7 +220,7 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
 struct ripple::TypedField&lt; T &gt;</div><p >A field with a type known at compile time. </p>
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00306">306</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00314">314</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a79f4a056fd0ef5a54a31de6245a019cc" name="a79f4a056fd0ef5a54a31de6245a019cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79f4a056fd0ef5a54a31de6245a019cc">&#9670;&#160;</a></span>type</h2>
@@ -233,13 +236,13 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00308">308</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00316">316</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ab09fd4d4e594265bb88f17e6d7d8b037" name="ab09fd4d4e594265bb88f17e6d7d8b037"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab09fd4d4e594265bb88f17e6d7d8b037">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="af94c0c2a22f5292a328510d2abfd4606" name="af94c0c2a22f5292a328510d2abfd4606"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af94c0c2a22f5292a328510d2abfd4606">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,16 +261,17 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab09fd4d4e594265bb88f17e6d7d8b037a16f5e124abba72dd7fee5cbc6a166bc1" name="ab09fd4d4e594265bb88f17e6d7d8b037a16f5e124abba72dd7fee5cbc6a166bc1"></a>sMD_Never&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab09fd4d4e594265bb88f17e6d7d8b037a59b670b9992a3b5a100d52daca630353" name="ab09fd4d4e594265bb88f17e6d7d8b037a59b670b9992a3b5a100d52daca630353"></a>sMD_ChangeOrig&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab09fd4d4e594265bb88f17e6d7d8b037a0029817db1b7656ff16bc754b77b816b" name="ab09fd4d4e594265bb88f17e6d7d8b037a0029817db1b7656ff16bc754b77b816b"></a>sMD_ChangeNew&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab09fd4d4e594265bb88f17e6d7d8b037a27eebffbb3870e6dec971a4e5eab508e" name="ab09fd4d4e594265bb88f17e6d7d8b037a27eebffbb3870e6dec971a4e5eab508e"></a>sMD_DeleteFinal&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab09fd4d4e594265bb88f17e6d7d8b037a999d199098173271796050f2a3c40fad" name="ab09fd4d4e594265bb88f17e6d7d8b037a999d199098173271796050f2a3c40fad"></a>sMD_Create&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab09fd4d4e594265bb88f17e6d7d8b037aac5fc3d945894a116e771a4b04e33847" name="ab09fd4d4e594265bb88f17e6d7d8b037aac5fc3d945894a116e771a4b04e33847"></a>sMD_Always&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab09fd4d4e594265bb88f17e6d7d8b037ae46e414a936731e9c92ac910d935a6a0" name="ab09fd4d4e594265bb88f17e6d7d8b037ae46e414a936731e9c92ac910d935a6a0"></a>sMD_Default&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af94c0c2a22f5292a328510d2abfd4606a16f5e124abba72dd7fee5cbc6a166bc1" name="af94c0c2a22f5292a328510d2abfd4606a16f5e124abba72dd7fee5cbc6a166bc1"></a>sMD_Never&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af94c0c2a22f5292a328510d2abfd4606a59b670b9992a3b5a100d52daca630353" name="af94c0c2a22f5292a328510d2abfd4606a59b670b9992a3b5a100d52daca630353"></a>sMD_ChangeOrig&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af94c0c2a22f5292a328510d2abfd4606a0029817db1b7656ff16bc754b77b816b" name="af94c0c2a22f5292a328510d2abfd4606a0029817db1b7656ff16bc754b77b816b"></a>sMD_ChangeNew&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af94c0c2a22f5292a328510d2abfd4606a27eebffbb3870e6dec971a4e5eab508e" name="af94c0c2a22f5292a328510d2abfd4606a27eebffbb3870e6dec971a4e5eab508e"></a>sMD_DeleteFinal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af94c0c2a22f5292a328510d2abfd4606a999d199098173271796050f2a3c40fad" name="af94c0c2a22f5292a328510d2abfd4606a999d199098173271796050f2a3c40fad"></a>sMD_Create&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af94c0c2a22f5292a328510d2abfd4606aac5fc3d945894a116e771a4b04e33847" name="af94c0c2a22f5292a328510d2abfd4606aac5fc3d945894a116e771a4b04e33847"></a>sMD_Always&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af94c0c2a22f5292a328510d2abfd4606a7c89523c0f7efdeb2071da00f23ac056" name="af94c0c2a22f5292a328510d2abfd4606a7c89523c0f7efdeb2071da00f23ac056"></a>sMD_BaseTen&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af94c0c2a22f5292a328510d2abfd4606ae46e414a936731e9c92ac910d935a6a0" name="af94c0c2a22f5292a328510d2abfd4606ae46e414a936731e9c92ac910d935a6a0"></a>sMD_Default&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00144">144</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00146">146</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -295,7 +299,7 @@ template&lt;class T &gt; </div>
 <tr><td class="fieldname"><a id="aadcc78aed20dbdb0a4fb86867bb56ab0aa6105c0a611b41b08f1209506350279e" name="aadcc78aed20dbdb0a4fb86867bb56ab0aa6105c0a611b41b08f1209506350279e"></a>yes&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00155">155</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00158">158</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +371,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8cpp_source.html#l00464">464</a> of file <a class="el" href="SField_8cpp_source.html">SField.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8cpp_source.html#l00119">119</a> of file <a class="el" href="SField_8cpp_source.html">SField.cpp</a>.</p>
 
 </div>
 </div>
@@ -395,7 +399,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8cpp_source.html#l00492">492</a> of file <a class="el" href="SField_8cpp_source.html">SField.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8cpp_source.html#l00147">147</a> of file <a class="el" href="SField_8cpp_source.html">SField.cpp</a>.</p>
 
 </div>
 </div>
@@ -433,7 +437,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00192">192</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00195">195</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -471,7 +475,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00198">198</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00201">201</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -498,7 +502,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00204">204</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00207">207</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -525,7 +529,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00210">210</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00213">213</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +556,34 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00216">216</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00219">219</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+
+</div>
+</div>
+<a id="ae3bb99f842ef8fc1647a1d12f99c6aea" name="ae3bb99f842ef8fc1647a1d12f99c6aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3bb99f842ef8fc1647a1d12f99c6aea">&#9670;&#160;</a></span>operator Json::StaticString const &amp;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ripple::SField::operator <a class="el" href="classJson_1_1StaticString.html">Json::StaticString</a> const &amp; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00224">224</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +610,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00222">222</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00230">230</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -606,7 +637,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00228">228</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00236">236</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -633,7 +664,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00234">234</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00242">242</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -660,7 +691,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00244">244</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00252">252</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -687,7 +718,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00250">250</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00258">258</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -714,7 +745,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00255">255</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00263">263</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -741,7 +772,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00260">260</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00268">268</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -769,7 +800,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00266">266</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00274">274</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -797,7 +828,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00272">272</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00280">280</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -825,7 +856,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00279">279</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00287">287</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -853,7 +884,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00285">285</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00293">293</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -891,7 +922,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8cpp_source.html#l00476">476</a> of file <a class="el" href="SField_8cpp_source.html">SField.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8cpp_source.html#l00131">131</a> of file <a class="el" href="SField_8cpp_source.html">SField.cpp</a>.</p>
 
 </div>
 </div>
@@ -918,7 +949,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00294">294</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00302">302</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -943,7 +974,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00156">156</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00159">159</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -967,7 +998,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00158">158</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00161">161</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +1022,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00159">159</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00162">162</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1046,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00160">160</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00163">163</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1070,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00161">161</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00164">164</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1094,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00162">162</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00165">165</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1118,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00163">163</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00166">166</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1142,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00164">164</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00167">167</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1166,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00165">165</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00168">168</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1190,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00300">300</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00308">308</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
@@ -1183,7 +1214,7 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00301">301</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SField_8h_source.html#l00309">309</a> of file <a class="el" href="SField_8h_source.html">SField.h</a>.</p>
 
 </div>
 </div>
