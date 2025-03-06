@@ -8,13 +8,10 @@ we need to understand how we use CMake.
 
 ### CMake
 
-Technically, you don't need CMake to build this project.
-You could manually compile every translation unit into an object file,
-using the right compiler options,
-and then manually link all those objects together,
-using the right linker options.
-However, that is very tedious and error-prone,
-which is why we lean on tools like CMake.
+Without CMake, you would have to manually compile every translation unit into an
+object file using the right compiler operations, and then manually link those
+objects together using the right linker options. Since this is tedious and
+error-prone, we rely on CMake.
 
 We have written CMake configuration files
 ([`CMakeLists.txt`](./CMakeLists.txt) and friends)
@@ -57,17 +54,13 @@ For CMake, that file is a [toolchain file][toolchain].
 
 ### Conan
 
-These next few paragraphs on Conan are going to read much like the ones above
-for CMake.
+Without Conan, you would have to manually download, configure, build, and
+install all of the dependencies, and then pass all of the parameters necessary
+for CMake to link to those dependencies. For ABI compatibility, you may need to
+use the same set of compiler and linkeer options for all dependencies and this
+project. Since that is tedious and error-prone, we rely on Conan.
 
-Technically, you don't need Conan to build this project.
-You could manually download, configure, build, and install all of the
-dependencies yourself, and then pass all of the parameters necessary for
-CMake to link to those dependencies.
-To guarantee ABI compatibility, you must be sure to use the same set of
-compiler and linker options for all dependencies _and_ this project.
-However, that is very tedious and error-prone, which is why we lean on tools
-like Conan.
+First, [download and install Conan](https://conan.io/downloads).
 
 We have written a Conan configuration file ([`conanfile.py`](../../conanfile.py))
 so that Conan can be used to correctly download, configure, build, and install

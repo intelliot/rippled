@@ -86,10 +86,11 @@ These instructions assume a basic familiarity with Conan and CMake.
 
 If you are unfamiliar with Conan, then please read [this crash course](./docs/build/conan.md) or the official [Getting Started][3] walkthrough.
 
-You'll need at least one Conan profile:
+You'll need at least one Conan profile. In Conan 1.x, the command would be: `conan profile new default --detect`
 
+In Conan 2.x, the command would be:
    ```
-   conan profile new default --detect
+   conan profile detect
    ```
 
 Update the compiler settings:
