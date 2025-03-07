@@ -21,6 +21,7 @@
 
 #include <xrpl/basics/Expected.h>
 // #include <xrpl/beast/utility/Journal.h>
+#include <xrpl/beast/utility/Journal.h>
 #include <xrpl/protocol/TER.h>
 
 #include <wasmedge/wasmedge.h>
@@ -31,27 +32,31 @@ Expected<bool, TER>
 runEscrowWasm(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
-    int32_t input);
+    int32_t input,
+    beast::Journal j = beast::Journal(beast::Journal::getNullSink()));
 
 Expected<bool, TER>
 runEscrowWasm(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
-    std::vector<uint8_t> const& accountID);
+    std::vector<uint8_t> const& accountID,
+    beast::Journal j = beast::Journal(beast::Journal::getNullSink()));
 
 Expected<bool, TER>
 runEscrowWasm(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
     std::vector<uint8_t> const& escrow_tx_json_data,
-    std::vector<uint8_t> const& escrow_lo_json_data);
+    std::vector<uint8_t> const& escrow_lo_json_data,
+    beast::Journal j = beast::Journal(beast::Journal::getNullSink()));
 
 Expected<std::pair<bool, std::string>, TER>
 runEscrowWasmP4(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
     std::vector<uint8_t> const& escrow_tx_json_data,
-    std::vector<uint8_t> const& escrow_lo_json_data);
+    std::vector<uint8_t> const& escrow_lo_json_data,
+    beast::Journal j = beast::Journal(beast::Journal::getNullSink()));
 
 struct LedgerDataProvider
 {
@@ -68,7 +73,8 @@ Expected<bool, TER>
 runEscrowWasm(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
-    LedgerDataProvider* ledgerDataProvider);
+    LedgerDataProvider* ledgerDataProvider,
+    beast::Journal j = beast::Journal(beast::Journal::getNullSink()));
 
 }  // namespace ripple
 #endif  // RIPPLE_APP_MISC_WASMVM_H_INLCUDED

@@ -25,11 +25,13 @@
 // }
 
 namespace ripple {
+
 Expected<bool, TER>
 runEscrowWasm(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
-    int32_t input)
+    int32_t input,
+    beast::Journal j)
 {
     WasmEdge_VMContext* VMCxt = WasmEdge_VMCreate(NULL, NULL);
     WasmEdge_Value Params[1] = {WasmEdge_ValueGenI32(input)};
@@ -57,6 +59,9 @@ runEscrowWasm(
     else
     {
         printf("Error message: %s\n", WasmEdge_ResultGetMessage(Res));
+        if (j.warn())
+            j.warn() << "WASM execution failed with int32 input: " 
+                      << WasmEdge_ResultGetMessage(Res);
     }
 
     WasmEdge_VMDelete(VMCxt);
@@ -71,7 +76,8 @@ Expected<bool, TER>
 runEscrowWasm(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
-    std::vector<uint8_t> const& accountID)
+    std::vector<uint8_t> const& accountID,
+    beast::Journal j)
 {
     auto dataLen = (int32_t)accountID.size();
     // printf("accountID size: %d\n", dataLen);
@@ -140,6 +146,9 @@ runEscrowWasm(
     {
         printf(
             "Alloc error message: %s\n", WasmEdge_ResultGetMessage(allocRes));
+        if (j.warn())
+            j.warn() << "WASM allocation or execution failed with account ID: " 
+                      << WasmEdge_ResultGetMessage(allocRes);
     }
 
     WasmEdge_VMDelete(VMCxt);
@@ -159,7 +168,8 @@ runEscrowWasm(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
     std::vector<uint8_t> const& escrow_tx_json_data,
-    std::vector<uint8_t> const& escrow_lo_json_data)
+    std::vector<uint8_t> const& escrow_lo_json_data,
+    beast::Journal j)
 {
     WasmEdge_VMContext* VMCxt = WasmEdge_VMCreate(NULL, NULL);
 
@@ -168,6 +178,9 @@ runEscrowWasm(
     if (!WasmEdge_ResultOK(loadRes))
     {
         printf("load error\n");
+        if (j.warn())
+            j.warn() << "Failed to load WASM module from buffer: " 
+                      << WasmEdge_ResultGetMessage(loadRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 
@@ -175,6 +188,9 @@ runEscrowWasm(
     if (!WasmEdge_ResultOK(validateRes))
     {
         printf("validate error\n");
+        if (j.warn())
+            j.warn() << "Failed to validate WASM module: " 
+                      << WasmEdge_ResultGetMessage(validateRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 
@@ -182,6 +198,9 @@ runEscrowWasm(
     if (!WasmEdge_ResultOK(instantiateRes))
     {
         printf("instantiate error\n");
+        if (j.warn())
+            j.warn() << "Failed to instantiate WASM module: " 
+                      << WasmEdge_ResultGetMessage(instantiateRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 
@@ -219,6 +238,8 @@ runEscrowWasm(
     if (tx_ptr == 0 || lo_ptr == 0)
     {
         printf("data error\n");
+        if (j.warn())
+            j.warn() << "Failed to allocate memory for escrow transaction or lookout data";
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 
@@ -243,6 +264,9 @@ runEscrowWasm(
     else
     {
         printf("Func message: %s\n", WasmEdge_ResultGetMessage(funcRes));
+        if (j.warn())
+            j.warn() << "Failed to execute WASM function with escrow transaction and lookout data: " 
+                      << WasmEdge_ResultGetMessage(funcRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 }
@@ -252,7 +276,8 @@ runEscrowWasmP4(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
     std::vector<uint8_t> const& escrow_tx_json_data,
-    std::vector<uint8_t> const& escrow_lo_json_data)
+    std::vector<uint8_t> const& escrow_lo_json_data,
+    beast::Journal j)
 {
     WasmEdge_VMContext* VMCxt = WasmEdge_VMCreate(NULL, NULL);
 
@@ -261,6 +286,9 @@ runEscrowWasmP4(
     if (!WasmEdge_ResultOK(loadRes))
     {
         printf("load error\n");
+        if (j.warn())
+            j.warn() << "Failed to load WASM module from buffer for P4 execution: " 
+                      << WasmEdge_ResultGetMessage(loadRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 
@@ -268,6 +296,9 @@ runEscrowWasmP4(
     if (!WasmEdge_ResultOK(validateRes))
     {
         printf("validate error\n");
+        if (j.warn())
+            j.warn() << "Failed to validate WASM module for P4 execution: " 
+                      << WasmEdge_ResultGetMessage(validateRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 
@@ -275,6 +306,9 @@ runEscrowWasmP4(
     if (!WasmEdge_ResultOK(instantiateRes))
     {
         printf("instantiate error\n");
+        if (j.warn())
+            j.warn() << "Failed to instantiate WASM module for P4 execution: " 
+                      << WasmEdge_ResultGetMessage(instantiateRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 
@@ -312,6 +346,8 @@ runEscrowWasmP4(
     if (tx_ptr == 0 || lo_ptr == 0)
     {
         printf("data error\n");
+        if (j.warn())
+            j.warn() << "Failed to allocate memory for P4 escrow transaction or lookout data";
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 
@@ -343,6 +379,9 @@ runEscrowWasmP4(
         {
             printf(
                 "re mem get message: %s\n", WasmEdge_ResultGetMessage(getRes));
+            if (j.warn())
+                j.warn() << "Failed to get P4 memory data (initial): " 
+                          << WasmEdge_ResultGetMessage(getRes);
             return Unexpected<TER>(tecFAILED_PROCESSING);
         }
         auto flag = buff[0];
@@ -370,6 +409,9 @@ runEscrowWasmP4(
             printf(
                 "re 2 mem get message: %s\n",
                 WasmEdge_ResultGetMessage(getRes));
+            if (j.warn())
+                j.warn() << "Failed to get P4 memory data (secondary buffer): " 
+                          << WasmEdge_ResultGetMessage(getRes);
             return Unexpected<TER>(tecFAILED_PROCESSING);
         }
 
@@ -391,6 +433,9 @@ runEscrowWasmP4(
     else
     {
         printf("Func message: %s\n", WasmEdge_ResultGetMessage(funcRes));
+        if (j.warn())
+            j.warn() << "Failed to execute P4 WASM function: " 
+                      << WasmEdge_ResultGetMessage(funcRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 }
@@ -405,7 +450,8 @@ Expected<bool, TER>
 runEscrowWasm(
     std::vector<uint8_t> const& wasmCode,
     std::string const& funcName,
-    LedgerDataProvider* ledgerDataProvider)
+    LedgerDataProvider* ledgerDataProvider,
+    beast::Journal j)
 {
     WasmEdge_VMContext* VMCxt = WasmEdge_VMCreate(NULL, NULL);
     {//register host function
@@ -432,6 +478,9 @@ runEscrowWasm(
         if (!WasmEdge_ResultOK(regRe))
         {
             printf("host func reg error\n");
+            if (j.warn())
+                j.warn() << "Failed to register host functions for WASM: " 
+                          << WasmEdge_ResultGetMessage(regRe);
             return Unexpected<TER>(tecFAILED_PROCESSING);
         }
     }
@@ -440,18 +489,27 @@ runEscrowWasm(
     if (!WasmEdge_ResultOK(loadRes))
     {
         printf("load error\n");
+        if (j.warn())
+            j.warn() << "Failed to load WASM module with ledger provider: " 
+                      << WasmEdge_ResultGetMessage(loadRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
     WasmEdge_Result validateRes = WasmEdge_VMValidate(VMCxt);
     if (!WasmEdge_ResultOK(validateRes))
     {
         printf("validate error\n");
+        if (j.warn())
+            j.warn() << "Failed to validate WASM module with ledger provider: " 
+                      << WasmEdge_ResultGetMessage(validateRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
     WasmEdge_Result instantiateRes = WasmEdge_VMInstantiate(VMCxt);
     if (!WasmEdge_ResultOK(instantiateRes))
     {
         printf("instantiate error\n");
+        if (j.warn())
+            j.warn() << "Failed to instantiate WASM module with ledger provider: " 
+                      << WasmEdge_ResultGetMessage(instantiateRes);
         return Unexpected<TER>(tecFAILED_PROCESSING);
     }
 
@@ -472,6 +530,9 @@ runEscrowWasm(
     else
     {
         printf("Error message: %s\n", WasmEdge_ResultGetMessage(funcRes));
+        if (j.warn())
+            j.warn() << "Failed to execute WASM function with ledger provider: " 
+                      << WasmEdge_ResultGetMessage(funcRes);
     }
 
     WasmEdge_VMDelete(VMCxt);
