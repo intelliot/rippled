@@ -28,8 +28,8 @@ GTAGS
 GRTAGS
 GPATH
 bin/rippled
-Debug/*.*
-Release/*.*
+Debug/*
+Release/*
 
 # Ignore coverage files.
 *.gcno
