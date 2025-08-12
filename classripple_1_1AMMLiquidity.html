@@ -112,7 +112,7 @@ Collaboration diagram for ripple::AMMLiquidity&lt; TIn, TOut &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab64d5ee790ade8eea80a94449a0e120c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1AMMLiquidity.html#ab64d5ee790ade8eea80a94449a0e120c">AMMLiquidity</a> (<a class="el" href="classripple_1_1ReadView.html">ReadView</a> const &amp;view, <a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> const &amp;<a class="el" href="namespaceripple.html#a768092086ea18d2dbeb64efb9fa12ba5">ammAccountID</a>, <a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> <a class="el" href="classripple_1_1AMMLiquidity.html#a2464ba632642635216c034a22d1408c8">tradingFee</a>, <a class="el" href="classripple_1_1Issue.html">Issue</a> const &amp;<a class="el" href="namespaceripple.html#a7cc64e12723fbc9606d85442a2569feda13b5bfe96f3e2fe411c9f66f4a582adf">in</a>, <a class="el" href="classripple_1_1Issue.html">Issue</a> const &amp;<a class="el" href="namespaceripple.html#a7cc64e12723fbc9606d85442a2569fedac68271a63ddbc431c307beb7d2918275">out</a>, <a class="el" href="classripple_1_1AMMContext.html">AMMContext</a> &amp;ammContext, <a class="el" href="classbeast_1_1Journal.html">beast::Journal</a> j)</td></tr>
+<tr class="memitem:ab64d5ee790ade8eea80a94449a0e120c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1AMMLiquidity.html#ab64d5ee790ade8eea80a94449a0e120c">AMMLiquidity</a> (<a class="el" href="classripple_1_1ReadView.html">ReadView</a> const &amp;view, <a class="el" href="namespaceripple.html#a00ae0d729cb3e35b6bcac9a27ebb5284">AccountID</a> const &amp;ammAccountID, <a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> <a class="el" href="classripple_1_1AMMLiquidity.html#a2464ba632642635216c034a22d1408c8">tradingFee</a>, <a class="el" href="classripple_1_1Issue.html">Issue</a> const &amp;<a class="el" href="namespaceripple.html#a7cc64e12723fbc9606d85442a2569feda13b5bfe96f3e2fe411c9f66f4a582adf">in</a>, <a class="el" href="classripple_1_1Issue.html">Issue</a> const &amp;<a class="el" href="namespaceripple.html#a7cc64e12723fbc9606d85442a2569fedac68271a63ddbc431c307beb7d2918275">out</a>, <a class="el" href="classripple_1_1AMMContext.html">AMMContext</a> &amp;ammContext, <a class="el" href="classbeast_1_1Journal.html">beast::Journal</a> j)</td></tr>
 <tr class="separator:ab64d5ee790ade8eea80a94449a0e120c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a640f4fd0c1a5b2500f43c75132f702b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1AMMLiquidity.html#a640f4fd0c1a5b2500f43c75132f702b0">~AMMLiquidity</a> ()=default</td></tr>
 <tr class="separator:a640f4fd0c1a5b2500f43c75132f702b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,8 +167,8 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ad00ff2bd1b2054e6500d6c21f19176b2"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classripple_1_1Number.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1AMMLiquidity.html#ad00ff2bd1b2054e6500d6c21f19176b2">InitialFibSeqPct</a> = <a class="el" href="classripple_1_1Number.html">Number</a>(5) / 20000</td></tr>
-<tr class="separator:ad00ff2bd1b2054e6500d6c21f19176b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fb841bc078c796d9e3c2fcb3541c13"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classripple_1_1Number.html">Number</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classripple_1_1AMMLiquidity.html#a10fb841bc078c796d9e3c2fcb3541c13">InitialFibSeqPct</a> = <a class="el" href="classripple_1_1Number.html">Number</a>(5) / 20000</td></tr>
+<tr class="separator:a10fb841bc078c796d9e3c2fcb3541c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename TIn, typename TOut&gt;<br />
@@ -594,8 +594,8 @@ template&lt;typename TIn , typename TOut &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad00ff2bd1b2054e6500d6c21f19176b2" name="ad00ff2bd1b2054e6500d6c21f19176b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad00ff2bd1b2054e6500d6c21f19176b2">&#9670;&#160;</a></span>InitialFibSeqPct</h2>
+<a id="a10fb841bc078c796d9e3c2fcb3541c13" name="a10fb841bc078c796d9e3c2fcb3541c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10fb841bc078c796d9e3c2fcb3541c13">&#9670;&#160;</a></span>InitialFibSeqPct</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -606,7 +606,7 @@ template&lt;typename TIn , typename TOut &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classripple_1_1Number.html">Number</a> <a class="el" href="classripple_1_1AMMLiquidity.html">ripple::AMMLiquidity</a>&lt; TIn, TOut &gt;::InitialFibSeqPct = <a class="el" href="classripple_1_1Number.html">Number</a>(5) / 20000</td>
+          <td class="memname"><a class="el" href="classripple_1_1Number.html">Number</a> const <a class="el" href="classripple_1_1AMMLiquidity.html">ripple::AMMLiquidity</a>&lt; TIn, TOut &gt;::InitialFibSeqPct = <a class="el" href="classripple_1_1Number.html">Number</a>(5) / 20000</td>
         </tr>
       </table>
   </td>

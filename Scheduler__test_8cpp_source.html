@@ -96,7 +96,7 @@ $(function() {
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//==============================================================================</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;test/csf/Scheduler.h&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;xrpl/basics/ByteUtilities.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;xrpl/beast/unit_test.h&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="codeRef" href="http://en.cppreference.com/w/cpp/header/set.html">set</a>&gt;</span></div>
@@ -161,11 +161,11 @@ $(function() {
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="namespaceripple_1_1test.html#a8400ddbe788e8ae9cda3c67a8865e4a9">   86</a></span>BEAST_DEFINE_TESTSUITE(Scheduler, test, <a class="code hl_namespace" href="namespaceripple.html">ripple</a>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="namespaceripple_1_1test.html#aefc010655d70ff7b8dae57276342ea08">   86</a></span>BEAST_DEFINE_TESTSUITE(Scheduler, csf, <a class="code hl_namespace" href="namespaceripple.html">ripple</a>);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}  <span class="comment">// namespace test</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}  <span class="comment">// namespace ripple</span></div>
-<div class="ttc" id="aclassbeast_1_1unit__test_1_1suite_html"><div class="ttname"><a href="classbeast_1_1unit__test_1_1suite.html">beast::unit_test::suite</a></div><div class="ttdoc">A testsuite class.</div><div class="ttdef"><b>Definition:</b> <a href="suite_8h_source.html#l00052">suite.h:53</a></div></div>
+<div class="ttc" id="aclassbeast_1_1unit__test_1_1suite_html"><div class="ttname"><a href="classbeast_1_1unit__test_1_1suite.html">beast::unit_test::suite</a></div><div class="ttdoc">A testsuite class.</div><div class="ttdef"><b>Definition:</b> <a href="suite_8h_source.html#l00054">suite.h:55</a></div></div>
 <div class="ttc" id="aclassripple_1_1test_1_1Scheduler__test_html"><div class="ttname"><a href="classripple_1_1test_1_1Scheduler__test.html">ripple::test::Scheduler_test</a></div><div class="ttdef"><b>Definition:</b> <a href="Scheduler__test_8cpp_source.html#l00029">Scheduler_test.cpp:30</a></div></div>
 <div class="ttc" id="aclassripple_1_1test_1_1Scheduler__test_html_aa64e314a13577440b1711e402606eef7"><div class="ttname"><a href="classripple_1_1test_1_1Scheduler__test.html#aa64e314a13577440b1711e402606eef7">ripple::test::Scheduler_test::run</a></div><div class="ttdeci">void run() override</div><div class="ttdoc">Runs the suite.</div><div class="ttdef"><b>Definition:</b> <a href="Scheduler__test_8cpp_source.html#l00033">Scheduler_test.cpp:33</a></div></div>
 <div class="ttc" id="aclassripple_1_1test_1_1csf_1_1Scheduler_html"><div class="ttname"><a href="classripple_1_1test_1_1csf_1_1Scheduler.html">ripple::test::csf::Scheduler</a></div><div class="ttdoc">Simulated discrete-event scheduler.</div><div class="ttdef"><b>Definition:</b> <a href="test_2csf_2Scheduler_8h_source.html#l00047">test/csf/Scheduler.h:48</a></div></div>
@@ -180,7 +180,7 @@ $(function() {
 <div class="ttc" id="aclassripple_1_1test_1_1csf_1_1Scheduler_html_afd75fc9d632c78cbcded7cd26f781ef7"><div class="ttname"><a href="classripple_1_1test_1_1csf_1_1Scheduler.html#afd75fc9d632c78cbcded7cd26f781ef7">ripple::test::csf::Scheduler::in</a></div><div class="ttdeci">cancel_token in(duration const &amp;delay, Function &amp;&amp;f)</div><div class="ttdoc">Schedule an event after a specified duration passes.</div></div>
 <div class="ttc" id="aempty_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/set/empty.html">std::set::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
 <div class="ttc" id="ainsert_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/set/insert.html">std::set::insert</a></div><div class="ttdeci">T insert(T... args)</div></div>
-<div class="ttc" id="anamespaceripple_html"><div class="ttname"><a href="namespaceripple.html">ripple</a></div><div class="ttdoc">Use hash_* containers for keys that do not need a cryptographically secure hashing algorithm.</div><div class="ttdef"><b>Definition:</b> <a href="algorithm_8h_source.html#l00026">algorithm.h:26</a></div></div>
+<div class="ttc" id="anamespaceripple_html"><div class="ttname"><a href="namespaceripple.html">ripple</a></div><div class="ttdoc">Use hash_* containers for keys that do not need a cryptographically secure hashing algorithm.</div><div class="ttdef"><b>Definition:</b> <a href="algorithm_8h_source.html#l00025">algorithm.h:25</a></div></div>
 <div class="ttc" id="aset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/header/set.html">set</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
